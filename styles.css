@@ -125,3 +125,37 @@ body.light .bar-track{background:#e8eef8}
 .roi-card li {
   margin: 0.3rem 0;
 }
+.roi-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.roi-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.roi-card h3 {
+  color: #00aaff;
+  margin-bottom: 0.8rem;
+}
+
+.roi-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.roi-card li {
+  margin: 0.4rem 0;
+}
