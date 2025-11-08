@@ -1,66 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>1:1 Consultation — B2B AI Insights</title>
-  <link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1:1 Consultation – B2B AI Insights</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav"><div class="container nav-inner">
-  <a class="brand" href="index.html"><img src="assets/logo.png" class="logo" alt="B2B AI Insights"></a>
-  <nav class="menu">
-    <a href="index.html">Home</a><a href="roi.html">ROI</a><a href="webinar.html">Webinar</a>
-    <a class="active" href="consulting.html">1:1 Consultation</a><a href="clients.html">Who we work with</a>
-    <span class="lang-switch"><button id="btnDE" class="active">DE</button><button id="btnEN">EN</button></span>
-    <button id="themeToggle" class="toggle">◐</button>
-  </nav>
-</div></header>
 
-<section class="hero"><div class="container reveal revealed">
-  <div class="lang-en">
-    <h1>1:1 Consulting for B2B Teams — from insight to implementation</h1>
-    <p>Book a strategy session to identify your highest-impact automations and design a 30-day pilot.</p>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="B2B AI Insights" class="logo">
+    </a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="roi.html">ROI</a>
+      <a href="webinar.html">Webinar</a>
+      <a class="active" href="consulting.html">1:1 Consultation</a>
+      <a href="clients.html">Who we work with</a>
+    </nav>
+    <span class="lang-switch">
+      <button id="btnDE" class="toggle">DE</button>
+      <button id="btnEN" class="toggle active">EN</button>
+    </span>
+    <button id="themeToggle" class="toggle">🌓</button>
   </div>
-  <div class="lang-de">
-    <h1>1:1 Beratung für B2B-Teams — von der Analyse bis zur Umsetzung</h1>
-    <p>Identifizieren Sie die wirkungsvollsten Automationen und planen Sie einen 30-Tage-Pilot.</p>
+</header>
+
+<section class="hero">
+  <div class="container reveal">
+    <div class="lang-en">
+      <h1>1:1 Consulting for B2B Teams – from insight to implementation</h1>
+      <p>Book a strategy session to identify your highest-impact automations and design a 30-day pilot.</p>
+    </div>
+    <div class="lang-de">
+      <h1>1:1 Beratung für B2B-Teams – von der Analyse bis zur Umsetzung</h1>
+      <p>Identifizieren Sie die wirkungsvollsten Automationen und planen Sie einen 30-Tage-Pilot.</p>
+    </div>
   </div>
-</div></section>
+</section>
 
 <section class="section reveal">
   <div class="container grid grid-2">
-    <form class="card form" method="POST" action="FORM_ENDPOINT">
+
+    <!-- FORMULARZ -->
+    <form class="card form" method="POST" action="https://formspree.io/f/movpgvbg">
       <h3 class="lang-en">Request a 1:1 consultation</h3>
       <h3 class="lang-de">1:1 Beratung anfragen</h3>
+
+      <input type="hidden" name="_subject" value="1:1 Consultation request (B2B AI Insights)">
+      <input type="hidden" name="_language" value="en">
+      <input type="text" name="_honeypot" style="display:none">
+
       <div class="grid grid-2">
         <div><label>First name<input name="first_name" required></label></div>
         <div><label>Last name<input name="last_name" required></label></div>
         <div><label>Company<input name="company" required></label></div>
         <div><label>Job title<input name="job_title"></label></div>
-        <div><label>Company size
-          <select name="company_size"><option>1–10</option><option>11–50</option><option>51–200</option><option>200+</option></select>
-        </label></div>
+        <div>
+          <label>Company size
+            <select name="company_size">
+              <option>1–10</option>
+              <option>11–50</option>
+              <option>51–200</option>
+              <option>200+</option>
+            </select>
+          </label>
+        </div>
         <div><label>Email<input type="email" name="email" required></label></div>
       </div>
+
       <label>Focus area
         <select name="focus">
-          <option>Sales funnel</option><option>HR automations</option><option>Operations</option>
-          <option>Customer support</option><option>IT & integrations</option>
+          <option>Sales funnel</option>
+          <option>HR automations</option>
+          <option>Operations</option>
+          <option>Customer support</option>
+          <option>IT & integrations</option>
         </select>
       </label>
-      <label>Short description<textarea name="message" rows="4" placeholder="Context, goals, tools in use"></textarea></label>
-      <label class="small"><input type="checkbox" name="consent" required> I agree to be contacted about this request.</label>
-      <label class="small lang-de"><input type="checkbox" required> Ich willige in die direkte Kontaktaufnahme zu dieser Anfrage ein.</label>
+
+      <label>Short description
+        <textarea name="message" rows="4" placeholder="Context, goals, tools in use"></textarea>
+      </label>
+
+      <label class="small">
+        <input type="checkbox" name="consent" required>
+        I agree to be contacted about this request.
+      </label>
+      <label class="small lang-de">
+        <input type="checkbox" required>
+        Ich willige in die direkte Kontaktaufnahme zu dieser Anfrage ein.
+      </label>
+
       <button class="cta pill" type="submit">Send</button>
       <p class="small">Contact: b2b.al.insights@gmail.com</p>
     </form>
 
+    <!-- CO KLIENT ZYSKUJE -->
     <div class="card">
       <div class="lang-en">
         <h3>What you gain</h3>
         <ul class="features">
           <li>🎯 Clarity on ROI potential</li>
-          <li>⚙️ A step-by-step implementation roadmap</li>
+          <li>⚙️ Step-by-step implementation roadmap</li>
           <li>💡 Expert stack recommendations (Make/n8n, Airtable/Notion, Zapier, ChatGPT API)</li>
           <li>⏱️ Time savings within weeks — pilot ready in 30 days</li>
           <li>📊 Custom ROI forecast & KPIs</li>
@@ -73,17 +118,22 @@
           <li>🎯 Klarheit über Ihr ROI-Potenzial</li>
           <li>⚙️ Konkreter Umsetzungs-Fahrplan</li>
           <li>💡 Stack-Empfehlungen (Make/n8n, Airtable/Notion, Zapier, ChatGPT API)</li>
-          <li>⏱️ Zeitersparnis in Wochen — Pilot in 30 Tagen</li>
+          <li>⏱️ Pilot in 30 Tagen — messbare Zeitersparnis</li>
           <li>📊 Individuelle ROI-Prognose & KPIs</li>
-          <li>🧠 Know-how-Transfer — verstehen, betreiben, skalieren</li>
+          <li>🧠 Know-how-Transfer für Betrieb & Skalierung</li>
         </ul>
       </div>
     </div>
+
   </div>
 </section>
 
-<footer class="footer"><div class="container foot-inner">
-  <small>© <span id="year"></span> B2B AI Insights.</small><a class="small" href="privacy.html">Privacy / Datenschutz</a>
-</div></footer>
+<footer class="footer">
+  <div class="container foot-inner">
+    <small>© <span id="year"></span> B2B AI Insights. All rights reserved.</small>
+  </div>
+</footer>
+
 <script src="script.js" defer></script>
-</body></html>
+</body>
+</html>
