@@ -1,78 +1,121 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Webinar — B2B AI Insights</title>
-  <link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="nav"><div class="container nav-inner">
-  <a class="brand" href="index.html"><img src="assets/logo.png" class="logo" alt="B2B AI Insights"></a>
-  <nav class="menu">
-    <a href="index.html">Home</a><a href="roi.html">ROI</a><a class="active" href="webinar.html">Webinar</a>
-    <a href="consulting.html">1:1 Consultation</a><a href="clients.html">Who we work with</a>
-    <span class="lang-switch"><button id="btnDE" class="active">DE</button><button id="btnEN">EN</button></span>
-    <button id="themeToggle" class="toggle">◐</button>
-  </nav>
-</div></header>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" class="logo" alt="B2B AI Insights" />
+      </a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="roi.html">ROI</a>
+        <a class="active" href="webinar.html">Webinar</a>
+        <a href="consulting.html">1:1 Consultation</a>
+        <a href="clients.html">Who we work with</a>
+        <span class="lang-switch">
+          <button id="btnDE" class="active">DE</button>
+          <button id="btnEN">EN</button>
+        </span>
+        <button id="themeToggle" class="toggle" aria-label="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero"><div class="container reveal revealed">
-  <div class="lang-en">
-    <h1>AI & No-Code for B2B: from pilot to ROI in 30 days</h1>
-    <p>Live session with real use-cases for DE/CH. Seats are limited.</p>
-  </div>
-  <div class="lang-de">
-    <h1>KI & No-Code: vom Pilot zum ROI in 30 Tagen</h1>
-    <p>Live-Session mit echten Use-Cases für DE/CH. Begrenzte Plätze.</p>
-  </div>
-</div></section>
-
-<section class="section reveal">
-  <div class="container grid grid-2">
-    <div class="card">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container reveal revealed">
       <div class="lang-en">
-        <h3>What you’ll learn</h3>
-        <ul class="features">
-          <li>Where automation pays off first</li>
-          <li>How to design a 30-day pilot & measure ROI</li>
-          <li>Tooling: Make/n8n, Airtable/Notion, CRM, Calendly, AI agents</li>
-        </ul>
+        <h1>AI & No-Code for B2B: from pilot to ROI in 30 days</h1>
+        <p>Live session with real DE/CH use-cases. Seats are limited.</p>
       </div>
       <div class="lang-de">
-        <h3>Das lernen Sie</h3>
-        <ul class="features">
-          <li>Wo Automatisierung zuerst lohnt</li>
-          <li>30-Tage-Pilot planen & ROI messen</li>
-          <li>Tools: Make/n8n, Airtable/Notion, CRM, Calendly, AI Agents</li>
-        </ul>
+        <h1>KI & No-Code: vom Pilot zum ROI in 30 Tagen</h1>
+        <p>Live-Session mit echten Use-Cases für DE/CH. Begrenzte Plätze.</p>
       </div>
     </div>
+  </section>
 
-    <form class="card form" method="POST" action="FORM_ENDPOINT">
-      <h3 class="lang-en">Register for the webinar</h3>
-      <h3 class="lang-de">Zum Webinar anmelden</h3>
-      <div class="grid grid-2">
-        <div><label>First name<input name="first_name" required></label></div>
-        <div><label>Last name<input name="last_name" required></label></div>
-        <div><label>Company<input name="company" required></label></div>
-        <div><label>Job title<input name="job_title"></label></div>
-        <div><label>Company size
-          <select name="company_size">
-            <option>1–10</option><option>11–50</option><option>51–200</option><option>200+</option>
-          </select></label>
+  <!-- CONTENT -->
+  <section class="section reveal">
+    <div class="container grid grid-2">
+
+      <!-- WHAT YOU'LL LEARN -->
+      <div class="card">
+        <div class="lang-en">
+          <h3>What you’ll learn</h3>
+          <ul class="features">
+            <li>Where automation pays off first</li>
+            <li>How to design a 30-day pilot & measure ROI</li>
+            <li>Tooling: Make/n8n, Airtable/Notion, CRM, Calendly, AI agents</li>
+          </ul>
         </div>
-        <div><label>Email<input type="email" name="email" required></label></div>
+        <div class="lang-de">
+          <h3>Das lernen Sie</h3>
+          <ul class="features">
+            <li>Wo Automatisierung sich zuerst lohnt</li>
+            <li>30-Tage-Pilot planen & ROI messen</li>
+            <li>Tools: Make/n8n, Airtable/Notion, CRM, Calendly, AI Agents</li>
+          </ul>
+        </div>
       </div>
-      <label class="small"><input type="checkbox" name="consent" required> I agree to be contacted regarding this webinar.</label>
-      <label class="small lang-de"><input type="checkbox" required> Ich willige in die direkte Kontaktaufnahme im Zusammenhang mit diesem Webinar ein.</label>
-      <button class="cta pill" type="submit">Register</button>
-      <p class="small">Contact: b2b.al.insights@gmail.com</p>
-    </form>
-  </div>
-</section>
 
-<footer class="footer"><div class="container foot-inner">
-  <small>© <span id="year"></span> B2B AI Insights.</small><a class="small" href="privacy.html">Privacy / Datenschutz</a>
-</div></footer>
-<script src="script.js" defer></script>
-</body></html>
+      <!-- FORM -->
+      <form class="card form" method="POST" action="https://formspree.io/f/movpgvbg">
+        <h3 class="lang-en">Register for the webinar</h3>
+        <h3 class="lang-de">Zum Webinar anmelden</h3>
+
+        <!-- hidden helpers -->
+        <input type="hidden" name="_subject" value="Webinar registration (B2B AI Insights)" />
+        <input type="hidden" name="_language" value="en" />
+        <input type="text" name="_honeypot" style="display:none" />
+
+        <div class="grid grid-2">
+          <div><label>First name<input name="first_name" required /></label></div>
+          <div><label>Last name<input name="last_name" required /></label></div>
+          <div><label>Company<input name="company" required /></label></div>
+          <div><label>Job title<input name="job_title" /></label></div>
+          <div>
+            <label>Company size
+              <select name="company_size">
+                <option>1–10</option><option>11–50</option>
+                <option>51–200</option><option>200+</option>
+              </select>
+            </label>
+          </div>
+          <div><label>Email<input type="email" name="email" required /></label></div>
+        </div>
+
+        <label class="small">
+          <input type="checkbox" name="consent" required />
+          I agree to be contacted regarding this webinar.
+        </label>
+        <label class="small lang-de">
+          <input type="checkbox" required />
+          Ich willige in die direkte Kontaktaufnahme im Zusammenhang mit diesem Webinar ein.
+        </label>
+
+        <button class="cta pill" type="submit">Register</button>
+        <p class="small">Contact: b2b.al.insights@gmail.com</p>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <small>© <span id="year"></span> B2B AI Insights.</small>
+      <a class="small" href="privacy.html">Privacy / Datenschutz</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
