@@ -155,6 +155,79 @@ body.light .bar-track{background:#e8eef8}
   padding: 0;
   margin: 0;
 }
+/* === HERO LAYOUT FIX === */
+.hero {
+  padding: 80px 20px;
+  background: radial-gradient(60% 80% at 50% 0%, rgba(0,140,255,.10), transparent 60%),
+              linear-gradient(180deg, #0b0f14 0%, #0c1116 100%);
+}
+
+.hero .container {
+  max-width: 980px;
+  margin: 0 auto;          /* wyśrodkowanie całego bloku */
+  text-align: center;       /* środek dla tekstu i przycisków */
+}
+
+.hero h1 {
+  margin: 0 0 14px;
+  line-height: 1.15;
+}
+
+.hero p {
+  margin: 0 0 28px;
+  color: #cdd6e1;
+}
+
+/* CTA – równe, na środku, responsywnie */
+.cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .15s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.cta.pill {
+  background: #2b7cff;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.cta.pill:hover { transform: translateY(-1px); }
+
+.cta.ghost {
+  border: 2px solid #2b7cff;
+  color: #2b7cff;
+  background: transparent;
+}
+
+.cta.ghost:hover {
+  color: #fff;
+  background: #2b7cff;
+}
+
+/* Logo w hero – delikatny efekt */
+.logo-hero-img, .hero img.logo-hero-img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 0 10px rgba(0,170,255,.25));
+}
+
+/* Odstęp pod nawigacją, żeby nic się nie „klejało” */
+.nav + .hero { margin-top: 12px; }
 
 .roi-card li {
   margin: 0.4rem 0;
