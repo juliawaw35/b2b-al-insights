@@ -245,3 +245,7 @@ header img.logo {
   display: inline-block;
   vertical-align: middle;
 }
+/* Domyślnie ukryj EN, pokaż DE */
+.lang-en { display: none; }
+[data-lang="en"] .lang-en { display: block; }
+[data-lang="en"] .lang-de { display: none; }
