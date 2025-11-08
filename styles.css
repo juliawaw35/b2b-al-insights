@@ -83,3 +83,7 @@ body.show-en .lang-de{display:none}
 .bar-track{height:10px; background:rgba(255,255,255,.12); border-radius:20px; overflow:hidden}
 body.light .bar-track{background:#e8eef8}
 .bar{height:100%; background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+.features { margin: 0; padding-left: 1rem; display: grid; gap: .4rem; }
+.features li { line-height: 1.5; }
+.card h4 { margin-top: .75rem; font-weight: 600; }
+.muted.small { opacity: .75; font-size: .9rem; }
