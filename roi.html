@@ -1,185 +1,108 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ROI — B2B AI Insights</title>
-  <link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROI – B2B AI Insights</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="nav"><div class="container nav-inner">
-  <a class="brand" href="index.html"><img src="assets/logo.png" class="logo" alt="B2B AI Insights"></a>
-  <nav class="menu">
-    <a href="index.html">Home</a><a class="active" href="roi.html">ROI</a>
-    <a href="webinar.html">Webinar</a><a href="consulting.html">1:1 Consultation</a><a href="clients.html">Who we work with</a>
-    <span class="lang-switch"><button id="btnDE" class="active">DE</button><button id="btnEN">EN</button></span>
-    <button id="themeToggle" class="toggle">◐</button>
-  </nav>
-</div></header>
-
-<section class="hero"><div class="container reveal revealed">
-  <div class="lang-en">
-    <h1>ROI & Business Impact</h1>
-    <p>We measure automation with real numbers — time saved, FTE avoided, conversion uplift, tool consolidation.</p>
-  </div>
-  <div class="lang-de">
-    <h1>ROI & Geschäftswert</h1>
-    <p>Wir messen Automatisierung mit echten Zahlen – Zeitersparnis, FTE-Vermeidung, Conversion-Uplift, Tool-Konsolidierung.</p>
-  </div>
-</div></section>
-
-<section class="section reveal">
-  <div class="container card">
-    <h3 class="lang-en">ROI Overview</h3>
-    <h3 class="lang-de">ROI-Übersicht</h3>
-    <div class="grid grid-2">
-      <div>
-        <div class="row"><strong>Sales</strong><span>+€3,000/mo</span></div>
-        <div class="bar-track" data-w="70%"><div class="bar"></div></div>
-        <div class="row"><strong>Operations</strong><span>+€800/mo</span></div>
-        <div class="bar-track" data-w="45%"><div class="bar"></div></div>
-        <div class="row"><strong>Support</strong><span>+€1,350/mo</span></div>
-        <div class="bar-track" data-w="55%"><div class="bar"></div></div>
-        <div class="row"><strong>IT</strong><span>+€425/mo</span></div>
-        <div class="bar-track" data-w="35%"><div class="bar"></div></div>
-      </div>
-      <div>
-        <div class="row"><strong>FTE avoided</strong><span>+€3,500/mo</span></div>
-        <div class="bar-track" data-w="80%"><div class="bar"></div></div>
-        <div class="row"><strong>Tool consolidation</strong><span>+€800/mo</span></div>
-        <div class="bar-track" data-w="40%"><div class="bar"></div></div>
-        <hr>
-        <div class="row"><strong>Total monthly impact</strong><span><strong>+€9,075</strong></span></div>
-        <div class="row"><span class="small">Payback</span><span class="small">~5 weeks</span></div>
-      </div>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="B2B AI Insights" class="logo">
+      </a>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="roi.html" class="active">ROI</a>
+        <a href="webinar.html">Webinar</a>
+        <a href="consulting.html">1:1 Consultation</a>
+        <a href="clients.html">Who we work with</a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="section alt reveal">
-  <div class="container grid grid-2">
-    <div class="card">
-      <h3 class="lang-en">Funnel ROI (from click to sale)</h3>
-      <h3 class="lang-de">Funnel-ROI (vom Klick zum Deal)</h3>
-      <ul class="features">
-        <li>CTR 0.8% → 1.2% (+0.4pp)</li>
-        <li>CPL 8€ → 6€ (-2€)</li>
-        <li>Signup→Attendance 30% → 40% (+10pp)</li>
-        <li>Attendance→Booking 10% → 15% (+5pp)</li>
-        <li>Close rate 25% → 30% (+5pp)</li>
-        <li>Avg. deal €7,500 → €8,000 (+€500)</li>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container reveal">
+      <h1>ROI Insights & Real Results</h1>
+      <p>We transform hours of manual work into measurable gains — saving time, money and resources for mid-sized B2B companies in Germany & Switzerland.</p>
+    </div>
+  </section>
+
+  <!-- ROI CARDS -->
+  <section class="section reveal">
+    <div class="container">
+      <h2>ROI by Function</h2>
+      <div class="roi-grid">
+
+        <div class="roi-card">
+          <h3>💼 Sales</h3>
+          <ul>
+            <li><strong>+15 qualified leads/month</strong></li>
+            <li>No-show rate reduced by <strong>15pp</strong></li>
+            <li>Lead value ≈ <strong>€3,000/month</strong></li>
+            <li>Average conversion rate ↑ +22%</li>
+          </ul>
+        </div>
+
+        <div class="roi-card">
+          <h3>⚙️ Operations</h3>
+          <ul>
+            <li><strong>32h/month saved</strong> via automation</li>
+            <li>Operational errors ↓ 60%</li>
+            <li>Acceptance time ↓ from 7 → 3 days</li>
+            <li>Time savings ≈ €800–1,000 monthly</li>
+          </ul>
+        </div>
+
+        <div class="roi-card">
+          <h3>🤝 Customer Support</h3>
+          <ul>
+            <li>–45 tickets/month via AI deflection</li>
+            <li>CSAT ↑ from 72% → 90%</li>
+            <li>Response time ↓ by 50%</li>
+            <li>Estimated ROI: €1,350/month</li>
+          </ul>
+        </div>
+
+        <div class="roi-card">
+          <h3>💻 IT & Integrations</h3>
+          <ul>
+            <li>Manual integrations ↓ from 25 → 17 hrs</li>
+            <li>Tool costs reduced by €300/month</li>
+            <li>6 fewer incidents/month</li>
+            <li>Integration ROI: €400–600/month</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h3>📊 Example Results (Case Study)</h3>
+      <ul class="case-list">
+        <li><strong>Recruitment:</strong> candidate updates automated → 25h/week saved</li>
+        <li><strong>Industrial:</strong> Excel → Airtable automation → 8h/day saved</li>
+        <li><strong>SaaS:</strong> AI follow-up assistant → +22% conversion in 1 month</li>
       </ul>
+
+      <p class="muted small">
+        Values reflect typical outcomes for mid-sized B2B companies in DE/CH.  
+        Real ROI achieved within 30–60 days after implementation.
+      </p>
     </div>
-    <div class="card">
-      <h3 class="lang-en">Scenarios (30/90/180 days)</h3>
-      <h3 class="lang-de">Szenarien (30/90/180 Tage)</h3>
-      <ul class="features">
-        <li>Pessimistic: €4,700 → €10,350 → €13,200</li>
-        <li>Realistic: €9,000 → €18,000 → €21,000</li>
-        <li>Optimistic: €13,500 → €27,000 → €32,000</li>
-      </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container foot-inner">
+      <small><span id="year"></span> B2B AI Insights. All rights reserved.</small>
+      <a href="privacy.html" class="small">Privacy</a>
     </div>
-  </div>
-</section>
-</section>
+  </footer>
 
-<!-- 🔥 FULL ROI BLOCK (inserted here) -->
-<section class="section reveal">
-  <div class="container">
-    ... [tu wklejasz cały kod z ROI, który ci dałem wcześniej z tabelami i wartościami] ...
-  </div>
-</section>
-<section class="section reveal">
-  <div class="container">
-
-    <!-- ROI AT A GLANCE -->
-    <div class="grid grid-4">
-      <div class="card">
-        <h4 class="lang-en">Time saved</h4>
-        <h4 class="lang-de">Zeitersparnis</h4>
-        <p><strong>≈ 32 h / month</strong></p>
-        <p class="muted">≈ €800/mo (25 €/h)</p>
-      </div>
-      <div class="card">
-        <h4>FTE avoided</h4>
-        <p><strong>~1 FTE</strong></p>
-        <p class="muted">≈ €3,500/mo</p>
-      </div>
-      <div class="card">
-        <h4>Sales uplift</h4>
-        <p><strong>+15 leads / mo</strong></p>
-        <p class="muted">−15 pp no-show</p>
-      </div>
-      <div class="card">
-        <h4>Support deflection</h4>
-        <p><strong>−45 tickets / mo</strong></p>
-        <p class="muted">≈ €1,350/mo</p>
-      </div>
-    </div>
-
-    <!-- ROI HORIZON (CUMULATIVE) -->
-    <div class="card">
-      <div class="lang-en">
-        <h3>ROI horizon (cumulative)</h3>
-        <table class="table">
-          <thead><tr><th>Horizon</th><th>Time</th><th>FTE</th><th>Total</th></tr></thead>
-          <tbody>
-            <tr><td>30 days</td><td>€2,250</td><td>€3,500</td><td><strong>€5,750</strong></td></tr>
-            <tr><td>90 days</td><td>€6,750</td><td>€10,500</td><td><strong>€17,250</strong></td></tr>
-            <tr><td>180 days</td><td>€13,500</td><td>€21,000</td><td><strong>€34,500</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="lang-de">
-        <h3>ROI-Horizont (kumuliert)</h3>
-        <table class="table">
-          <thead><tr><th>Horizont</th><th>Zeit</th><th>FTE</th><th>Summe</th></tr></thead>
-          <tbody>
-            <tr><td>30 Tage</td><td>2.250 €</td><td>3.500 €</td><td><strong>5.750 €</strong></td></tr>
-            <tr><td>90 Tage</td><td>6.750 €</td><td>10.500 €</td><td><strong>17.250 €</strong></td></tr>
-            <tr><td>180 Tage</td><td>13.500 €</td><td>21.000 €</td><td><strong>34.500 €</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="muted small">Assumptions: €25/h, FTE €3,500/mo (DE/CH mid-market), service ticket €30. Exact model customized per client.</p>
-    </div>
-    <section class="section reveal">
-  <div class="container">
-    <h2>ROI Highlights by Department</h2>
-
-    <div class="roi-grid">
-      <div class="roi-card">
-        <h3>💼 Sales</h3>
-        <p><strong>+15 qualified leads/month</strong></p>
-        <p>Lead value ≈ €3,000 / month</p>
-        <p>No-show rate reduced by 15%</p>
-      </div>
-
-      <div class="roi-card">
-        <h3>⚙️ Operations</h3>
-        <p><strong>–32h manual work / month</strong></p>
-        <p>Process automation saves 800–1,000€ monthly</p>
-        <p>Implementation within 30 days</p>
-      </div>
-
-      <div class="roi-card">
-        <h3>🤝 Customer Support</h3>
-        <p><strong>–45 tickets/month via automation</strong></p>
-        <p>CSAT increased to 90%</p>
-        <p>Average time per case reduced by 50%</p>
-      </div>
-
-      <div class="roi-card">
-        <h3>💻 IT & Integrations</h3>
-        <p><strong>–170€/month tool upkeep</strong></p>
-        <p>–6 incidents/month avoided</p>
-        <p>Integration costs cut by 20–30%</p>
-      </div>
-    </div>
-
-    <p class="muted small">
-      Values reflect typical outcomes for mid-sized B2B companies in DE/CH after automation.
-    </p>
-  </div>
-</section>
-
- 
+  <script src="script.js" defer></script>
+</body>
+</html>
