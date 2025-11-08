@@ -225,13 +225,6 @@ body.light .bar-track{background:#e8eef8}
   margin-bottom: 16px;
   filter: drop-shadow(0 0 10px rgba(0,170,255,.25));
   }
-  .logo {
-  width: 120px;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /* Odstęp pod nawigacją, żeby nic się nie „klejało” */
 .nav + .hero { margin-top: 12px; }
 
