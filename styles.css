@@ -244,3 +244,11 @@ body.light .bar-track{background:#e8eef8}
   display: inline-block;
   vertical-align: middle;
 }
+/* LOGO FIX for Home */
+header img.logo {
+  width: 120px !important;
+  height: auto !important;
+  max-height: 60px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
